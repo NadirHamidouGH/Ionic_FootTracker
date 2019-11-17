@@ -1,0 +1,323 @@
+
+<ion-row>
+  <ion-col class="title">
+    <img src="../../assets/premierLegue.png" alt="" width="50px"> <h4 >Premier league</h4>
+
+  </ion-col>
+</ion-row>
+
+<ion-row>
+
+
+  <table class="table my-2">
+    <thead>
+   
+          <tr  >
+            <th>R</th>
+            <th>Team</th>
+            <th>P</th>
+            <th style="color:#B2FF59">W</th>
+            <th style="color:#FFD740">D</th>
+            <th style="color:#FF6E40">L</th>
+            <th>Points</th>
+            
+          </tr>
+    
+   
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let item of standing ; let i = index;">
+            <tr *ngFor="let elemnt of item" >
+              <td [ngClass] =
+             "{
+              'UCL': elemnt.rank < 6 ,
+            
+              'UEL': elemnt.rank == 6 ,
+
+              'REL': elemnt.rank > 17
+             
+            }">{{elemnt.rank}}</td>
+              <td >{{elemnt.teamName}}</td>
+              <td >{{elemnt.all.matchsPlayed}}</td>
+              <td>{{elemnt.all.win}}</td>
+              <td>{{elemnt.all.draw}}</td>
+              <td>{{elemnt.all.lose}}</td>
+              <td>{{elemnt.points}}</td>
+            </tr>   
+    </ng-container>
+    </tbody>
+  </table>
+
+  <!-- <ul> 
+    <li *ngFor="let item of standing ; let i = index;">
+        <p *ngFor="let elemnt of item">
+          {{elemnt.teamName}}
+        </p>
+    </li>
+  </ul> -->
+
+
+</ion-row>
+
+<ion-row>
+    <ion-col class="title">
+        <img src="../../assets/laliga.png" alt="" width="50px"> <h4 > La liga</h4>
+  
+    </ion-col>
+  </ion-row>
+  
+  <ion-row>
+  
+  
+    <table class="table my-2">
+      <thead>
+     
+            <tr  >
+              <th>R</th>
+              <th>Team</th>
+              <th>P</th>
+              <th style="color:#B2FF59">W</th>
+              <th style="color:#FFD740">D</th>
+              <th style="color:#FF6E40">L</th>
+              <th>Points</th>
+              
+            </tr>
+      
+     
+      </thead>
+      <tbody>
+          <ng-container *ngFor="let item of standing1 ; let i = index;">
+              <tr *ngFor="let elemnt of item">
+                <td
+                [ngClass] =
+             "{
+              'UCL': elemnt.rank < 5 ,
+            
+              'UEL': elemnt.rank == 5 ,
+
+              'UELQ': elemnt.rank == 6 ,
+
+              'REL': elemnt.rank > 17
+             
+            }"
+                >{{elemnt.rank}}</td>
+                <td >{{elemnt.teamName}}</td>
+                <td >{{elemnt.all.matchsPlayed}}</td>
+                <td>{{elemnt.all.win}}</td>
+                <td>{{elemnt.all.draw}}</td>
+                <td>{{elemnt.all.lose}}</td>
+                <td>{{elemnt.points}}</td>
+              </tr>   
+      </ng-container>
+      </tbody>
+    </table>
+  
+    <!-- <ul> 
+      <li *ngFor="let item of standing ; let i = index;">
+          <p *ngFor="let elemnt of item">
+            {{elemnt.teamName}}
+          </p>
+      </li>
+    </ul> -->
+  
+  
+  </ion-row>
+
+
+  <ion-row>
+      <ion-col class="title">
+          <img src="../../assets/Serie_A.png" alt="" width="50px"> <h4 > Seria A</h4>
+    
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+    
+    
+      <table class="table my-2">
+        <thead>
+       
+              <tr  >
+                <th>R</th>
+                <th>Team</th>
+                <th>P</th>
+                <th style="color:#B2FF59">W</th>
+                <th style="color:#FFD740">D</th>
+                <th style="color:#FF6E40">L</th>
+                <th>Points</th>
+                
+              </tr>
+        
+       
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let item of standing3 ; let i = index;">
+                <tr *ngFor="let elemnt of item">
+                  <td 
+                  [ngClass] =
+                  "{
+                   'UCL': elemnt.rank < 5 ,
+                 
+                   'UEL': elemnt.rank == 5 ,
+     
+                   'UELQ': elemnt.rank == 6 ,
+     
+                   'REL': elemnt.rank > 17
+                  
+                 }"
+                  >{{elemnt.rank}}</td>
+                  <td >{{elemnt.teamName}}</td>
+                  <td >{{elemnt.all.matchsPlayed}}</td>
+                  <td>{{elemnt.all.win}}</td>
+                  <td>{{elemnt.all.draw}}</td>
+                  <td>{{elemnt.all.lose}}</td>
+                  <td>{{elemnt.points}}</td>
+                </tr>   
+        </ng-container>
+        </tbody>
+      </table>
+    
+      <!-- <ul> 
+        <li *ngFor="let item of standing ; let i = index;">
+            <p *ngFor="let elemnt of item">
+              {{elemnt.teamName}}
+            </p>
+        </li>
+      </ul> -->
+    
+    
+    </ion-row>
+
+    <ion-row>
+        <ion-col class="title">
+            <img src="../../assets/bundesLiga.png" alt="" width="50px"> <h4 > Bundesliga</h4>
+      
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+      
+      
+        <table class="table my-2">
+          <thead>
+         
+                <tr  >
+                  <th>R</th>
+                  <th>Team</th>
+                  <th>P</th>
+                  <th style="color:#B2FF59">W</th>
+                  <th style="color:#FFD740">D</th>
+                  <th style="color:#FF6E40">L</th>
+                  <th>Points</th>
+                  
+                </tr>
+          
+         
+          </thead>
+          <tbody>
+              <ng-container *ngFor="let item of standing4 ; let i = index;">
+                  <tr *ngFor="let elemnt of item">
+                    <td
+                    [ngClass] =
+                    "{
+                     'UCL': elemnt.rank < 5 ,
+                   
+                     'UEL': elemnt.rank == 5 ,
+       
+                     'UELQ': elemnt.rank == 6 ,
+
+                     'RELPO': elemnt.rank == 16 ,
+       
+                     'REL': elemnt.rank > 16
+                    
+                   }"
+                    
+                    >{{elemnt.rank}}</td>
+                    <td >{{elemnt.teamName}}</td>
+                    <td >{{elemnt.all.matchsPlayed}}</td>
+                    <td>{{elemnt.all.win}}</td>
+                    <td>{{elemnt.all.draw}}</td>
+                    <td>{{elemnt.all.lose}}</td>
+                    <td>{{elemnt.points}}</td>
+                  </tr>   
+          </ng-container>
+          </tbody>
+        </table>
+      
+        <!-- <ul> 
+          <li *ngFor="let item of standing ; let i = index;">
+              <p *ngFor="let elemnt of item">
+                {{elemnt.teamName}}
+              </p>
+          </li>
+        </ul> -->
+      
+      
+      </ion-row>
+
+      <ion-row>
+          <ion-col class="title">
+              <img src="../../assets/ligue-1.png" alt="" width="50px"> <h4 > ligue 1</h4>
+        
+          </ion-col>
+        </ion-row>
+        
+        <ion-row>
+        
+        
+          <table class="table my-2">
+            <thead>
+           
+                  <tr  >
+                    <th>R</th>
+                    <th>Team</th>
+                    <th>P</th>
+                    <th style="color:#B2FF59">W</th>
+                    <th style="color:#FFD740">D</th>
+                    <th style="color:#FF6E40">L</th>
+                    <th>Points</th>
+                    
+                  </tr>
+            
+           
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let item of standing5 ; let i = index;">
+                    <tr *ngFor="let elemnt of item">
+                      <td
+                      
+                      [ngClass] =
+                      "{
+                       'UCL': elemnt.rank < 3 ,
+                     
+                       'UEL': elemnt.rank == 3 ,
+         
+                       'UELQ': elemnt.rank == 4 ,
+
+                       'RELPO': elemnt.rank == 18 ,
+
+                       'REL': elemnt.rank > 18
+                      
+                     }"
+                      >{{elemnt.rank}}</td>
+                      <td >{{elemnt.teamName}}</td>
+                      <td >{{elemnt.all.matchsPlayed}}</td>
+                      <td>{{elemnt.all.win}}</td>
+                      <td>{{elemnt.all.draw}}</td>
+                      <td>{{elemnt.all.lose}}</td>
+                      <td>{{elemnt.points}}</td>
+                    </tr>   
+            </ng-container>
+            </tbody>
+          </table>
+        
+          <!-- <ul> 
+            <li *ngFor="let item of standing ; let i = index;">
+                <p *ngFor="let elemnt of item">
+                  {{elemnt.teamName}}
+                </p>
+            </li>
+          </ul> -->
+        
+        
+        </ion-row>

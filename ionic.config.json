@@ -1,0 +1,7 @@
+{
+  "name": "footracker",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,52 @@
+
+ p{
+   margin-bottom: 5px;
+ }
+  
+  .messages{
+    float: left;
+    min-width: 90%;
+    display: flex;
+    margin: 0.5rem;
+    justify-content: flex-start;
+    background: rgb(224, 224, 224);
+    padding: 5px;
+    border-radius: 5px;
+  }
+  // .container{
+  //   display: flex;
+  //   justify-content: center;
+  // }
+  h4{
+    margin: 5px;
+  }
+  .msg-content{
+      margin: 5px;
+  }
+  
+  
+  .photo-contact{
+    margin : 0.2rem;
+  }
+  
+ 
+  .date{
+    margin: auto;
+  }
+  
+  .new4 {
+    border: 1px solid #8C8C8C;
+    width: 30%;
+  }
+  
+  
+  .photo-sender{
+    max-width: 35%;
+    border-radius: 5px;
+    background: #818181;
+    color: white;
+    padding : 0.5rem;
+  }
+  
+
+  
