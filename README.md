@@ -2,9 +2,9 @@
 
 This is an Ionic mobile application for Android and IOS created using Angular and football API it resumes :
 
-1 Today fixtures \n
-2 This Wekk fixtures \n
-3 Current Standings \n
+1 Today fixtures <br>
+2 This Wekk fixtures <br>
+3 Current Standings <br>
 4 Top 10 scorers <br>
 
 It covers : Premier League , La Liga , Serie A , Bundesliga , France Ligue 1 .
