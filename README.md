@@ -1,4 +1,6 @@
-https://drive.google.com/file/d/1kWYtzRNt3wftFXDnrIVx0ivhiSlpZ-6R/view?usp=share_link
+test apk blink : https://drive.google.com/file/d/1kWYtzRNt3wftFXDnrIVx0ivhiSlpZ-6R/view?usp=share_link
+
+version myalliance : https://drive.google.com/file/d/1LyODpPbDklGGmgchDeFKF8usBVSDMtNn/view?usp=share_link
 
 # Ionic_FootTracker
 
